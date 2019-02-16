@@ -21,12 +21,9 @@ const CrimeSchema = new mongoose.Schema({
     type: String,
     default: ''
   },
-  weapon: {
-    type: String,
-    default: ''
-  },
   lat: Number,
-  lon: Number
+  lon: Number,
+  gotLocation: Boolean
 });
 
 module.exports = mongoose.model('Crime', CrimeSchema);
