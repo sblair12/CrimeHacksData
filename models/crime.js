@@ -23,7 +23,8 @@ const CrimeSchema = new mongoose.Schema({
   },
   lat: Number,
   lon: Number,
-  gotLocation: Boolean
+  gotLocation: Boolean,
+  category: String
 });
 
 module.exports = mongoose.model('Crime', CrimeSchema);
